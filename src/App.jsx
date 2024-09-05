@@ -7,6 +7,7 @@ import Weight from './pages/weight';
 import DOB from './pages/DOB';
 import Aim from './pages/Aim';
 import Wanted from './pages/wanted';
+// This is a comment
 function App() {
   return (
     <Router>
