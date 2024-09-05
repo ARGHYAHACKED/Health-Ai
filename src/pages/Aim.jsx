@@ -6,10 +6,12 @@ const Aim = () => {
   const [selectedGoal, setSelectedGoal] = useState("");
 
   const handleNext = () => {
-    if (selectedGoal) {
-      console.log("Selected Goal:", selectedGoal);
-        // <Route path="/wanted" element={<Wanted />} /> 
-      navigate('/wanted'); 
+    if (selectedGoal === "Lose Weight" || selectedGoal === "Gain Weight") {
+      // Navigate to Wanted page if the goal is Lose Weight or Gain Weight
+      navigate('/wanted');
+    } else if (selectedGoal === "Maintain Physics") {
+      // Navigate to Details page if the goal is Maintain Physics
+      navigate('/details');
     } else {
       console.log("Please select a goal.");
     }
@@ -45,10 +47,10 @@ const Aim = () => {
 
           {/* Maintain Physics Button */}
           <button
-            className={`py-3 px-20 rounded-lg border-2 ${selectedGoal === "Maintain Physics" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
+            className={`py-3 px-[60px] rounded-lg border-2 ${selectedGoal === "Maintain Physics" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
             onClick={() => setSelectedGoal("Maintain Physics")}
           >
-            Maintain Physics
+            Maintain Physique
           </button>
         </div>
       </div>

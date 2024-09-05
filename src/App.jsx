@@ -7,6 +7,8 @@ import Weight from './pages/weight';
 import DOB from './pages/DOB';
 import Aim from './pages/Aim';
 import Wanted from './pages/wanted';
+import Details from './pages/Details'
+import ThisWeek from './pages/ThisWeek';
 // This is a comment
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
         <Route path="/DOB" element={<DOB />} /> 
         <Route path="/wanted" element={<Wanted />} /> 
         <Route path="/Aim" element={<Aim/>} /> 
+        <Route path="/Details" element={<Details/>} />
+        <Route path="/thisweek" element={<ThisWeek/>} />
+
        
        
       </Routes>

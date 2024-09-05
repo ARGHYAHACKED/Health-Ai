@@ -60,7 +60,7 @@ const Wanted = () => {
 
   const handleNext = () => {
     console.log("Desired Weight:", convertWeight(weight));
-    navigate('/next-page'); // Navigate to the next page or handle submission
+    navigate('/ThisWeek'); // Navigate to the next page or handle submission
   };
 
   // Calculate scale width based on the weight (min 30kg, max 200kg)

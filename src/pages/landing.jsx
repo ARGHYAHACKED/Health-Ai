@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import logo from '../assets/Calorie.png';
 const Landing = () => {
   const navigate = useNavigate();
 
@@ -30,14 +30,14 @@ const Landing = () => {
       />
     </div>
 
+    <div>
+      <img src={ logo } className="h-20 w-20 rounded-b-xl relative top-56" />
+    </div>
+
     {/* App Content */}
     <div className="z-10 flex flex-col items-center mt-16 text-center">
-      {/* Logo */}
-      <img 
-        src="https://media.istockphoto.com/id/1408204293/photo/royal-gold-modern-font-elite-3d-digit-letter-7-seven-on-black-3d-button-icon-3d-illustration.webp?a=1&b=1&s=612x612&w=0&k=20&c=Nr-uTm9Lv2gmTzONO56uYJb8dMgsmBjTBF10IerpkeE=" 
-        alt="Cal AI Logo" 
-        className="w-24 h-24 mb-6 rounded-lg"
-      />
+      
+      
 
       {/* Description with Typewriter Effect */}
       <p className="text-gray-300 mt-4 px-6 overflow-hidden whitespace-pre-wrap border-r-4 border-gray-300 typewriter">

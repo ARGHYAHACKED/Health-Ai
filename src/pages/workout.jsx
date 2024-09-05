@@ -46,25 +46,25 @@ const Workout = () => {
         <h2 className="text-xl font-semibold mb-4">Type of Workouts</h2>
         <div className="flex flex-col items-center space-y-2">
           <button 
-            className={`py-3 px-28 rounded-lg border-2 ${workoutType === "Cardio" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
+            className={`py-3 px-20 rounded-lg border-2 ${workoutType === "Cardio" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
             onClick={() => setWorkoutType("Cardio")}
           >
             Cardio
           </button>
           <button 
-            className={`py-3 px-24 rounded-lg border-2 ${workoutType === "Strength" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
+            className={`py-3 px-[76px] rounded-lg border-2 ${workoutType === "Strength" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
             onClick={() => setWorkoutType("Strength")}
           >
             Strength
           </button>
           <button 
-            className={`py-3 px-24 rounded-lg border-2 ${workoutType === "Flexibility" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
+            className={`py-3 px-[76px] rounded-lg border-2 ${workoutType === "Flexibility" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
             onClick={() => setWorkoutType("Flexibility")}
           >
             Flexibility
           </button>
           <button 
-            className={`py-3 px-24 rounded-lg border-2 ${workoutType === "Other" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
+            className={`py-3 px-[90px] rounded-lg border-2 ${workoutType === "Other" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
             onClick={() => setWorkoutType("Other")}
           >
             Other

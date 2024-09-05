@@ -24,19 +24,19 @@ const Gender = () => {
         <h1 className="text-3xl font-bold mb-8">Select Your Gender</h1>
         <div className="flex flex-col items-center space-y-4">
           <button 
-            className={`py-3 px-28 rounded-lg border-2 ${selectedGender === "Male" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
+            className={`py-3 px-20 rounded-lg border-2 ${selectedGender === "Male" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
             onClick={() => handleSelection("Male")}
           >
             Male
           </button>
           <button 
-            className={`py-3 px-24 rounded-lg border-2 ${selectedGender === "Female" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
+            className={`py-3 px-[73px] rounded-lg border-2 ${selectedGender === "Female" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
             onClick={() => handleSelection("Female")}
           >
             Female
           </button>
           <button 
-            className={`py-3 px-24 rounded-lg border-2 ${selectedGender === "Other" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
+            className={`py-3 px-[76px] rounded-lg border-2 ${selectedGender === "Other" ? "bg-black text-white border-black" : "bg-white text-black border-black"}`}
             onClick={() => handleSelection("Other")}
           >
             Other
