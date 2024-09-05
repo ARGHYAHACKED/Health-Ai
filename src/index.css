@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* styles.css or your global CSS file */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    /* width: 100%; */
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    /* border-color: white; */
+  }
+}
+
+.typewriter {
+  display: inline-block; /* Ensure text is treated as inline-block for wrapping */
+  overflow: hidden; /* Hide overflowed text */
+  white-space: nowrap; /* Keep text on one line initially */
+  border-right: 0.15em solid white; /* Create the cursor effect */
+  animation: typewriter 4s steps(40, end) , blink 0.75s step-start infinite; /* Typewriter and cursor animation */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  width: 100%; /* Make sure text takes full width of its container */
+}
